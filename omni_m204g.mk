@@ -19,6 +19,9 @@ PRODUCT_RELEASE_NAME := Teclast M204G
 # Get the prebuilt list of APNs
 $(call inherit-product, vendor/omni/config/cdma.mk)
 
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/omni/config/common_full_phone.mk)
 
