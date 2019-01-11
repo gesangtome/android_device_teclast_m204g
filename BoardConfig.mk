@@ -47,6 +47,9 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 buildvariant=user
 BOARD_KERNEL_BASE := 0x40080000
 BOARD_KERNEL_PAGESIZE := 2048
 
+# Encryption/decryption
+TARGET_HW_DISK_ENCRYPTION := true
+
 # fix this up by examining /proc/mtd on a running device
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00380000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00480000
