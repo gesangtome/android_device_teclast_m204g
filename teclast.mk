@@ -13,9 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# The gps config appropriate for this device
-$(call inherit-product, device/common/gps/gps_us_supl.mk)
-
 $(call inherit-product-if-exists, vendor/teclast/m204g/m204g--vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/teclast/m204g/overlay
