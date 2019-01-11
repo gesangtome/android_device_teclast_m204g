@@ -68,6 +68,7 @@ TW_CUSTOM_BATTERY_PATH := /sys/devices/platform/battery/power_supply/battery
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 
 TW_EXCLUDE_SUPERSU := true
+TW_INCLUDE_NTFS_3G := true
 
 # Screen W/H
 TARGET_SCREEN_WIDTH := 2560
