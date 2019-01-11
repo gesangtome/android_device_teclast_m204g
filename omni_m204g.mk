@@ -20,11 +20,11 @@ PRODUCT_RELEASE_NAME := Teclast M204G
 $(call inherit-product, vendor/omni/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/Teclast/M204G/teclast.mk)
+$(call inherit-product, device/teclast/m204g/teclast.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := M204G
-PRODUCT_NAME := omni_M204G
+PRODUCT_DEVICE := m204g
+PRODUCT_NAME := omni_m204g
 PRODUCT_BRAND := Teclast
-PRODUCT_MODEL := M204G
+PRODUCT_MODEL := Teclast M204G
 PRODUCT_MANUFACTURER := Teclast

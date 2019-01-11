@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omnirom.mk
+    $(LOCAL_DIR)/omni_m204g.mk

@@ -18,13 +18,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/Teclast/M204G/M204G-vendor.mk)
+$(call inherit-product-if-exists, vendor/teclast/m204g/m204g--vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/Teclast/M204G/overlay
+DEVICE_PACKAGE_OVERLAYS += device/teclast/m204g/overlay
 
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/Teclast/M204G/kernel
+	LOCAL_KERNEL := device/teclast/m204g/kernel
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
@@ -35,5 +35,5 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_M204G
-PRODUCT_DEVICE := M204G
+PRODUCT_NAME := full_m204g
+PRODUCT_DEVICE := m204g
