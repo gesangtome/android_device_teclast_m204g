@@ -19,7 +19,7 @@
 /vendor_image  emmc  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/vendor    flags=fsflags=utf8;display="供应商镜像分区";backup=1
 
 /cache         ext4  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/cache     flags=fsflags=utf8;display="缓存分区";backup=1
-/data          ext4  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/userdata  flags=fsflags=utf8;display="数据分区";forceencrypt=/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/metadata;backup=1
+/data          ext4  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/userdata  flags=fsflags=utf8;display="数据分区";encryptable=/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/metadata;backup=1
 /boot          emmc  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/boot      flags=fsflags=utf8;display="内核分区";backup=1
 /recovery      emmc  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/recovery  flags=fsflags=utf8;display="恢复分区";backup=1
 /misc          emmc  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/para      flags=fsflags=utf8;display="参数分区";backup=1
