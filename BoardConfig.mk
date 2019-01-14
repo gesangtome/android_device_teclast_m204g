@@ -91,6 +91,9 @@ ifeq ($(TARGET_BUILD_VARIANT),eng)
    TARGET_USES_LOGD := true
 endif
 
+# SELinux
+BOARD_SEPOLICY_DIRS := vendor/omni/sepolicy
+
 # Screen W/H
 TARGET_SCREEN_WIDTH := 2560
 TARGET_SCREEN_HEIGHT := 1600
