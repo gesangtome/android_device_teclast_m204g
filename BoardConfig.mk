@@ -54,9 +54,6 @@ BOARD_RAMDISK_OFFSET := 0x04f88000
 BOARD_TAGS_OFFSET := 0x03f88000
 BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_TAGS_OFFSET)
 
-# Encryption/decryption
-TARGET_HW_DISK_ENCRYPTION := true
-
 # fix this up by examining /proc/mtd on a running device
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00380000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00480000
