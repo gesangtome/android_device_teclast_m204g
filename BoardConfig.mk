@@ -82,6 +82,7 @@ TW_CUSTOM_BATTERY_PATH := /sys/devices/platform/battery/power_supply/battery
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 
 TW_EXCLUDE_SUPERSU := true
+TW_EXCLUDE_TWRPAPP := true
 TW_INCLUDE_NTFS_3G := true
 TW_EXTRA_LANGUAGES := true
 TW_DEFAULT_LANGUAGE := zh_CN
