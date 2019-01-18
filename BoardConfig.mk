@@ -99,8 +99,6 @@ ifeq ($(TARGET_BUILD_VARIANT),eng)
    TARGET_USES_LOGD := true
 endif
 
-TW_HAS_DOWNLOAD_MODE := true
-
 # SELinux
 BOARD_SEPOLICY_DIRS := vendor/omni/sepolicy
 
