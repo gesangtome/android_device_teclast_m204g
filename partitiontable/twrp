@@ -30,9 +30,9 @@
 /protect_f     ext4  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/protect1
 /protect_s     ext4  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/protect2
 /proinfo       emmc  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/proinfo
-/nvram         emmc  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvram     flags=fsflags=utf8;display="NVRAM分区";backup=1
-/nvcfg         ext4  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvcfg     flags=fsflags=utf8;display="NVCFG分区";backup=1
-/nvdata        ext4  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvdata    flags=fsflags=utf8;display="NVDATA分区";backup=1
+/nvram         emmc  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvram     flags=fsflags=utf8;display="基带分区";backup=1
+/nvcfg         ext4  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvcfg     flags=fsflags=utf8;display="基带配置分区";backup=1
+/nvdata        ext4  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvdata
 /expdb         emmc  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/expdb
 /seccfg        emmc  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/seccfg
 /tee1          emmc  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/tee1
