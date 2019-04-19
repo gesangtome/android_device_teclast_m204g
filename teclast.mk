@@ -13,6 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Device uses high-density artwork where available
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
+
 $(call inherit-product-if-exists, vendor/teclast/m204g/m204g--vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/teclast/m204g/overlay
