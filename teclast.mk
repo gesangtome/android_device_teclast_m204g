@@ -147,3 +147,66 @@ PRODUCT_PACKAGES += \
     PerformanceControl \
     Stk
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
+    frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
+    frameworks/native/data/etc/android.hardware.faketouch.xml:system/etc/permissions/android.hardware.faketouch.xml \
+    frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
+    frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
+    frameworks/native/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
+    frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml \
+    frameworks/native/data/etc/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
+    frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
+    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.distinct.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
+    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
+    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.xml \
+    frameworks/native/data/etc/android.hardware.touchscreen.xml:system/etc/permissions/android.hardware.touchscreen.xml \
+    frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
+    frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
+    frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
+    frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
+    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
+    frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
+    frameworks/native/data/etc/android.hardware.camera.manual_sensor.xml:system/etc/permissions/android.hardware.camera.manual_sensor.xml
+
+# Audio
+PRODUCT_COPY_FILES += \
+    device/teclast/m204g/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+    device/teclast/m204g/audio/audio_policy.conf:system/vendor/etc/audio_policy.conf \
+    device/teclast/m204g/media/media_codecs.xml:system/vendor/etc/media_codecs.xml \
+    device/teclast/m204g/media/media_codecs_mediatek_audio.xml:system/vendor/etc/media_codecs_mediatek_audio.xml \
+    device/teclast/m204g/media/media_codecs_mediatek_video.xml:system/vendor/etc/media_codecs_mediatek_video.xml \
+    device/teclast/m204g/media/media_codecs_performance.xml:system/vendor/etc/media_codecs_performance.xml \
+    device/teclast/m204g/media/media_profiles.xml:system/etc/media_profiles.xml \
+    device/teclast/m204g/media/mtk_omx_core.cfg:system/vendor/etc/mtk_omx_core.cfg
+
+PRODUCT_COPY_FILES += \
+    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/vendor/etc/media_codecs_google_audio.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/vendor/etc/media_codecs_google_telephony.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:system/vendor/etc/media_codecs_google_video_le.xml
+
+# RAMDISK
+PRODUCT_COPY_FILES += \
+    device/teclast/m204g/ramdisk/init.mt6797.rc:root/init.mt6797.rc \
+    device/teclast/m204g/ramdisk/init.connectivity.rc:root/init.connectivity.rc \
+    device/teclast/m204g/ramdisk/init.mt6797.usb.rc:root/init.mt6797.usb.rc \
+    device/teclast/m204g/ramdisk/init.project.rc:root/init.project.rc \
+    device/teclast/m204g/ramdisk/init.aee.rc:root/init.aee.rc \
+    device/teclast/m204g/ramdisk/init.mal.rc:root/init.mal.rc \
+    device/teclast/m204g/ramdisk/init.sensor.rc:root/init.sensor.rc \
+    device/teclast/m204g/ramdisk/init.modem.rc:root/init.modem.rc \
+    device/teclast/m204g/ramdisk/ueventd.mt6797.rc:root/ueventd.mt6797.rc
+
+# SECCOMP
+PRODUCT_COPY_FILES += \
+    device/teclast/m204g/seccomp/mediacodec.policy:system/vendor/etc/seccomp_policy/mediacodec.policy
+
+# SPN
+PRODUCT_COPY_FILES += \
+    device/teclast/m204g/network/spn-conf.xml:system/etc/spn-conf.xml
+

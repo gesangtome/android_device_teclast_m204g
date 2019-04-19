@@ -1,0 +1,45 @@
+#
+# Copyright (c) 2019 Flowertome
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+on early-init
+    write /sys/class/net/ccmni0/queues/rx-0/rps_cpus "3ff"
+    write /sys/class/net/ccmni1/queues/rx-0/rps_cpus "3ff"
+    write /sys/class/net/ccmni2/queues/rx-0/rps_cpus "3ff"
+    write /sys/class/net/ccmni0/queues/rx-0/rps_flow_cnt "1000"
+    write /sys/class/net/ccmni1/queues/rx-0/rps_flow_cnt "1000"
+    write /sys/class/net/ccmni2/queues/rx-0/rps_flow_cnt "1000"
+    setprop net.perf.tether.rps 00f
+    setprop net.perf.rps.default 3ff
+    setprop net.perf.tether.cpu.core 4,4,0,0,0,0
+    setprop net.perf.tether.cpu.freq 1118000,1391000,0,0,0,0
+    setprop net.perf.internal.cpu.core 4,4,0,0,0,0
+    setprop net.perf.internal.cpu.freq -1,-1,-1,-1,-1,-1
+
+on post-fs-data
+
+    write /proc/bootprof "post-fs-data: on modem start"
+
+    # Encrypt phone function
+    setprop vold.post_fs_data_done 1
+
+#  Modem related
+service pppd /system/bin/pppd file /data/misc/ppp/ppp_options
+    user root
+    disabled 
+    oneshot
+
+on property:ril.muxreport=1
+    start muxreport-daemon
+
