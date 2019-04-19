@@ -19,14 +19,14 @@ PRODUCT_RELEASE_NAME := Teclast M204G
 # Inherit from AOSP 64-bit support
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-# Get the prebuilt list of APNs
-$(call inherit-product, vendor/omni/config/cdma.mk)
-
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
+
+# Get the prebuilt list of APNs
+$(call inherit-product, vendor/omni/config/cdma.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/teclast/m204g/teclast.mk)
