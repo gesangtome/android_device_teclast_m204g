@@ -192,6 +192,7 @@ PRODUCT_COPY_FILES += \
 
 # RAMDISK
 PRODUCT_COPY_FILES += \
+    device/teclast/m204g/fstab.mt6797:root/fstab.mt6797 \
     device/teclast/m204g/ramdisk/init.mt6797.rc:root/init.mt6797.rc \
     device/teclast/m204g/ramdisk/init.connectivity.rc:root/init.connectivity.rc \
     device/teclast/m204g/ramdisk/init.mt6797.usb.rc:root/init.mt6797.usb.rc \
