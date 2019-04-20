@@ -87,6 +87,11 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 
 BOARD_EGL_CFG := device/teclast/m204g/display/egl.cfg
 
+# GPS
+BOARD_GPS_LIBRARIES := true
+BOARD_CONNECTIVITY_MODULE := conn_soc 
+BOARD_MEDIATEK_USES_GPS := true
+
 # Kernel
 TARGET_PREBUILT_KERNEL := device/teclast/m204g/kernel-dtb
 
