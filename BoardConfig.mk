@@ -63,6 +63,9 @@ endif
 # Disable memcpy opt (for audio libraries)
 TARGET_CPU_MEMCPY_OPT_DISABLE := true
 
+# Enable Minikin text layout engine (will be the default soon)
+USE_MINIKIN := true
+
 # Kernel
 TARGET_PREBUILT_KERNEL := device/teclast/m204g/kernel-dtb
 
