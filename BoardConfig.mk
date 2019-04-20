@@ -49,6 +49,17 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_BLUETOOTH_DOES_NOT_USE_RFKILL := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/teclast/m204g/bluetooth
 
+# Deodex
+ifeq ($(HOST_OS),linux)
+  ifeq ($(WITH_DEXPREOPT),)
+    WITH_DEXPREOPT := true
+    ifneq ($(TARGET_BUILD_VARIANT),user)
+      # Retain classes.dex in APK's for non-user builds
+      DEX_PREOPT_DEFAULT := nostripping
+    endif
+  endif
+endif
+
 # Kernel
 TARGET_PREBUILT_KERNEL := device/teclast/m204g/kernel-dtb
 
