@@ -60,6 +60,9 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
+# Disable memcpy opt (for audio libraries)
+TARGET_CPU_MEMCPY_OPT_DISABLE := true
+
 # Kernel
 TARGET_PREBUILT_KERNEL := device/teclast/m204g/kernel-dtb
 
