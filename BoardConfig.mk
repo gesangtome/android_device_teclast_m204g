@@ -92,6 +92,9 @@ BOARD_GPS_LIBRARIES := true
 BOARD_CONNECTIVITY_MODULE := conn_soc 
 BOARD_MEDIATEK_USES_GPS := true
 
+# Header
+TARGET_SPECIFIC_HEADER_PATH := device/teclast/m204g/include
+
 # Kernel
 TARGET_PREBUILT_KERNEL := device/teclast/m204g/kernel-dtb
 
