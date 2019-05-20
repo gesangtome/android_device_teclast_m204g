@@ -14,5 +14,5 @@
 # limitations under the License.
 
 for PhoneVar in eng user userdebug;do
-  add_lunch_combo omni_m204g-$PhoneVar
+  add_lunch_combo lineage_m204g-$PhoneVar
 done

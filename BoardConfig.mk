@@ -119,7 +119,7 @@ BOARD_DISABLE_HW_ID_MATCH_CHECK := true
 SUPPRESS_MTK_AUDIO_BLOB_ERR_MSG := true
 
 # SELinux
-BOARD_SEPOLICY_DIRS := vendor/omni/sepolicy
+BOARD_SEPOLICY_DIRS := vendor/lineage/sepolicy
 
 # Screen W/H
 TARGET_SCREEN_WIDTH := 2560
