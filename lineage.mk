@@ -26,7 +26,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, vendor/lineage/config/common.mk)
 
 # Get the prebuilt list of APNs
-$(call inherit-product, vendor/lineage/config/cdma.mk)
+$(call inherit-product, vendor/lineage/config/telephony.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/teclast/m204g/teclast.mk)
